@@ -1,0 +1,185 @@
+#skills-container {
+  background: linear-gradient(
+    260deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(39, 39, 39, 1) 85%
+  );
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.skills-container,
+h1 {
+  margin-top: -25%;
+  font-size: 50px;
+  font-family: "Pulma", sans-serif;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  animation:
+    sideInLeft 1s ease-in 0s 1 normal both,
+    colorfulText 8s infinite alternate;
+}
+@keyframes sideInLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes colorfulText {
+  0% {
+    color: red;
+  }
+  15% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  45% {
+    color: green;
+  }
+  60% {
+    color: blue;
+  }
+  75% {
+    color: indigo;
+  }
+  90% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.skills-details {
+  max-width: 800px;
+  margin-left: 40%;
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-weight: light;
+  line-height: 1.5;
+}
+
+.skills-details text,
+.skills-details p,
+.skills-details span {
+  display: block;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+#workexperience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+}
+.workexperience-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40%;
+}
+.workexperience-details {
+  max-width: 600px;
+}
+.workexperience-details p {
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-weight: light;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  #skills-container {
+    padding: 20px 30px;
+  }
+
+  .skills-container h1 {
+    margin-top: -15%;
+    font-size: 40px;
+  }
+
+  .skills-details {
+    margin-left: 0;
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  #workexperience-container {
+    margin-top: -3%;
+    padding: 20px 30px;
+  }
+
+  .workexperience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workexperience-details {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #skills-container {
+    padding: 20px 20px;
+  }
+
+  .skills-container h1 {
+    margin-top: -10%;
+    font-size: 32px;
+  }
+
+  .skills-details {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  #workexperience-container {
+    margin-top: 0;
+    padding: 20px 20px;
+  }
+
+  .workexperience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workexperience-details {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #skills-container {
+    padding: 20px 15px;
+  }
+
+  .skills-container h1 {
+    margin-top: -5%;
+    font-size: 28px;
+  }
+
+  .skills-details {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  #workexperience-container {
+    padding: 20px 15px;
+  }
+
+  .workexperience-details p {
+    font-size: 12px;
+  }
+}

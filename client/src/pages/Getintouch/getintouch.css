@@ -1,0 +1,88 @@
+#getintouch-container {
+  background: linear-gradient(
+    260deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(39, 39, 39, 1) 85%
+  );
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 200px 100px;
+  text-align: left;
+  position: relative;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Pulma", sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-weight: light;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-family: "Cy Grotesk Key", sans-serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555151;
+  border-radius: 5px;
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-size: 16px;
+  background-color: #242020;
+  color: white;
+}
+
+.contact-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #555151;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Cy Grotesk Key", sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: #423b3b;
+}
+
+.contact-form p {
+  color: #e970e7;
+  margin-top: 20px;
+}

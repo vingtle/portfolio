@@ -1,0 +1,42 @@
+#mywork-container {
+  background: linear-gradient(
+    260deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(39, 39, 39, 1) 85%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Pulma", sans-serif;
+  margin-bottom: 40px;
+}
+
+p {
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-weight: light;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.mywork-links a {
+  display: block;
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-weight: light;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.mywork-links a:hover {
+  color: #aaaaaa;
+}

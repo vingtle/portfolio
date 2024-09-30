@@ -1,0 +1,133 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(
+    260deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(39, 39, 39, 1) 85%
+  );
+  color: white;
+  background-size: cover;
+  height: 100vh;
+}
+.aboutme-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.aboutme-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.profile-image {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  border: none;
+  flex-shrink: 0;
+  margin-top: -20%;
+  animation: appear 0.5s ease-in-out forwards;
+}
+@keyframes appear {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.aboutme-text {
+  max-width: 600px;
+  margin-left: 40px;
+}
+
+.aboutme-text,
+h1 {
+  font-size: 50px;
+  align-items: center;
+  font-family: "Pulma", sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.aboutme-text p {
+  font-family: "Cy Grotesk Key", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .aboutme-main {
+    padding: 20px 20px;
+  }
+
+  .profile-image {
+    width: 300px;
+  }
+
+  .aboutme-text h1 {
+    font-size: 22px;
+  }
+
+  .aboutme-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+  }
+
+  .profile-image {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .aboutme-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .aboutme-text h1 {
+    font-size: 36px;
+  }
+
+  .aboutme-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 200px;
+  }
+
+  .aboutme-text h1 {
+    font-size: 30px;
+  }
+
+  .aboutme-text p {
+    font-size: 14px;
+  }
+}

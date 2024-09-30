@@ -1,0 +1,124 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#home {
+  background: linear-gradient(
+    260deg,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(39, 39, 39, 1) 85%
+  );
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  flex-direction: column;
+}
+
+#header {
+  position: fixed;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.title {
+  font-size: 120px;
+  font-family: "Pluma", sans-serif;
+  font-weight: 1;
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 200px;
+  animation: rainbowGlow 10s infinite alternate;
+}
+@keyframes rainbowGlow {
+  0% {
+    text-shadow:
+      0 0 10px #ff0000,
+      0 0 20px #ff0000,
+      /* Red */ 0 0 30px #ff7f00,
+      0 0 40px #ff7f00,
+      /* Orange */ 0 0 50px #ffff00,
+      0 0 60px #ffff00; /* Yellow */
+  }
+  16% {
+    text-shadow:
+      0 0 10px #00ff00,
+      0 0 20px #00ff00,
+      /* Green */ 0 0 30px #0000ff,
+      0 0 40px #0000ff,
+      /* Blue */ 0 0 50px #4b0082,
+      0 0 60px #4b0082; /* Indigo */
+  }
+  33% {
+    text-shadow:
+      0 0 10px #9400d3,
+      0 0 20px #9400d3,
+      /* Violet */ 0 0 30px #ff0000,
+      0 0 40px #ff0000,
+      /* Red */ 0 0 50px #ff7f00,
+      0 0 60px #ff7f00; /* Orange */
+  }
+  50% {
+    text-shadow:
+      0 0 10px #ffff00,
+      0 0 20px #ffff00,
+      /* Yellow */ 0 0 30px #00ff00,
+      0 0 40px #00ff00,
+      /* Green */ 0 0 50px #0000ff,
+      0 0 60px #0000ff; /* Blue */
+  }
+  66% {
+    text-shadow:
+      0 0 10px #4b0082,
+      0 0 20px #4b0082,
+      /* Indigo */ 0 0 30px #9400d3,
+      0 0 40px #9400d3,
+      /* Violet */ 0 0 50px #ff0000,
+      0 0 60px #ff0000; /* Red */
+  }
+  83% {
+    text-shadow:
+      0 0 10px #ff7f00,
+      0 0 20px #ff7f00,
+      /* Orange */ 0 0 30px #ffff00,
+      0 0 40px #ffff00,
+      /* Yellow */ 0 0 50px #00ff00,
+      0 0 60px #00ff00; /* Green */
+  }
+  100% {
+    text-shadow:
+      0 0 10px #0000ff,
+      0 0 20px #0000ff,
+      /* Blue */ 0 0 30px #4b0082,
+      0 0 40px #4b0082,
+      /* Indigo */ 0 0 50px #9400d3,
+      0 0 60px #9400d3; /* Violet */
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  #home {
+    padding: 0; /* Add some padding for better appearance on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+  }
+}
