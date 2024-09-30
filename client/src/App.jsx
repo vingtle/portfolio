@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Welcome from "./pages/welcome/welcome";
-import Education from "./pages/education/education";
-import AboutMe from "./pages/aboutme/aboutme";
-import Skills from "./pages/skills/skills";
+import Welcome from "./pages/Welcome/Welcome";
+import Education from "./pages/Education/Education";
+import AboutMe from "./pages/AboutMe/Aboutme";
+import Skills from "./pages/Skills/Skills";
 import GetInTouch from "./pages/Getintouch/Getintouch";
-import MyWork from "./pages/mywork/mywork";
+import MyWork from "./pages/Mywork/Mywork";
 
 function App() {
   return (
